@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon"href="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/flipkart-icon.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <title>Fashion</title>
+    <style>
+        .phone img {
+            height: 200px;
+            width: auto;
+            max-width:250px;
+            padding-left:40px;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1%;
+            justify-content: space-around;
+        }
+        .phone {
+            width: 100%;
+            max-width: 300px;
+            margin: 10px;
+            padding: 10px;
+            box-sizing: border-box;
+            animation-name:nav;
+            animation-iteration-count:1;
+            animation-duration:1s;
+            transition:0.3s;
+        }
+        .phone:hover{
+            transform:scale(110%);
+            box-shadow:8px 5px 10px darkgray;
+        }
+        @keyframes nav{
+          0%{transform:translateX(60px);
+              opacity:0.5;}
+              100%{transform:translate(0);
+              opacity: 1;}
+        }
+        #btn{
+            border-radius:20px;
+            width:100px;
+            background:linear-gradient(to left,#c2c5aa,#656d4a);
+            transition:0.5s;
+        }
+        #btn:hover{
+            transform:scale(110%);
+        }
+        p {
+            text-align: center;
+        }
+        .filter {
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            gap: 1%;
+        }
+
+        @media (min-width: 576px) {
+            .phone {
+                width: 45%;
+            }
+        }
+
+        @media (min-width: 768px) {
+            .phone {
+                width: 30%;
+            }
+        }
+
+        @media (min-width: 992px) {
+            .phone {
+                width: 22%;
+            }
+        }
+        .box{
+            font-size:20px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar bg-dark border-bottom border-body sticky-top" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand"><img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/fkheaderlogo_exploreplus-44005d.svg"/></a>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+      <a href="index.html"><div class="btn m-4 bg-primary">Back</div></a>
+      <div class="filter">
+        <h4>Filter</h4>
+        <input type="number" placeholder="Enter a Min Number" id="min">
+        <input type="number" placeholder="Enter a Max Number" id="max">
+        <input type="submit" value="Submit" id="btn">
+    </div>
+    <div class="container pt-3">
+        <div class="phone">
+            <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/watch/j/d/b/-original-imagnvwurcbtn5qe.jpeg?q=70"/>
+            <p>Titan-Karishma Analog Watch - For Men NN1639SM01</p>
+            <p class="box" data-value="1796">₹1,796</p>
+        </div>
+        <div class="phone">
+            <img src="https://rukminim2.flixcart.com/image/612/612/ks7tuvk0/watch/v/t/l/d229-w-737h-1avdf-casio-original-imag5tufmwrhvbdy.jpeg?q=70"/>
+            <p>Casio-Youth- Digital Watch - For Boys & Girls D229 (W-737H-1AVDF)</p>
+            <p class="box" data-value="1709">₹1,709</p>
+        </div>
+        <div class="phone">
+            <img src="https://rukminim2.flixcart.com/image/612/612/k8ytaq80/watch/b/f/k/1797kl03f-titan-original-imafqv8yvgf3vshg.jpeg?q=70"/>
+            <p>Fossil-Automatic Magnate Analog Watch - For Men NN1797KL03F</p>
+            <p class="box" data-value="17308">₹17,308</p>
+        </div>
+        <div class="phone">
+            <img src="https://rukminim2.flixcart.com/image/612/612/kyvvtzk0/watch/u/p/g/1-ce1107it-fossil-women-original-imagbyhr3g4ug6t9.jpeg?q=70"/>
+            <p>Fossile-FB-01 Analog Watch - For Women CE1107</p>
+            <p class="box" data-value="16995">₹16,995</p>
+        </div>
+        <div class="phone">
+            <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/watch/n/y/n/1-dk-1-13440-2-daniel-klein-men-original-imagzyqgygrzmwhm.jpeg?q=70"/>
+            <p>Skeleton Series Analog Watch - For Men DK.1.13440-2</p>
+            <p class="box" data-value="16650">₹16,650</p>
+        </div>
+        <div class="phone">
+            <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/watch/l/v/n/1-tw2v569000d-timex-women-original-imah3yawntqzxush.jpeg?q=70"/>
+            <p>Analog Watch - For Women TW2V569000D</p>
+            <p class="box" data-value="4497">₹4,497</p>
+        </div>
+        <div class="phone">
+            <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/watch/n/8/c/-original-imagy9b7kwgn3v8r.jpeg?q=70"/>
+            <p>TIMEX-Automatic Silver Dial Analog Watch - For Men TWEG208SMU09</p>
+            <p class="box" data-value="5009">₹5,009</p>
+        </div>
+        <div class="phone">
+            <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/watch/c/z/w/1-krwgp9005701-kenneth-cole-reaction-men-original-imagghyuyxhe8h5h.jpeg?q=70"/>
+            <p>Kenneth Cole Reaction-Analog-Digital Watch - For Men KRWGP9005701</p>
+            <p class="box" data-value="3359">₹3,359</p>
+        </div>
+        <div class="phone">
+            <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/shoe/y/a/o/-original-imagsuvnnwymb4jz.jpeg?q=70"/>
+            <p>ADIDAS- VERTAGO W Walking Shoes For Women  (Grey , 6)</p>
+            <p class="box" data-value="1049">₹1,049</p>
+        </div>
+        <div class="phone">
+            <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/shoe/j/x/c/4-hp7558-4-adidas-cblack-cblack-carbon-original-imagz5guusvgzgv7.jpeg?q=70"/>
+            <p>ADIDAS-RUNFALCON 3.0 W Running Shoes For Women  (Black , 5)</p>
+            <p class="box" data-value="3299">₹3,299</p>
+        </div>
+        <div class="phone">
+            <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/shoe/3/c/5/9-eona-primary-black-9-rare-rabbit-black-original-imaguyewajhqarvk.jpeg?q=70"/>
+            <p>Rare Rabbit-Mocassin For Men  (Black , 8)</p>
+            <p class="box" data-value="8999">₹8,999</p>
+        </div>
+        <div class="phone">
+            <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/shoe/m/u/z/11-392434-11-puma-white-warm-white-cool-light-grey-original-imagvgf8r8btjq9m.jpeg?q=70"/>
+            <p>PUMA-Slipstream Xtreme Sneakers For Men  (White , 10.5)</p>
+            <p class="box" data-value="8399">₹8,399</p>
+        </div>
+        <div class="phone">
+            <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/shoe/p/a/x/-original-imagxvywr9sgzzgg.jpeg?q=70"/>
+            <p>ADIDAS ORIGINALS -SAMBA OG Casuals For Men  (Green , 6)</p>
+            <p class="box" data-value="7199">₹7,199</p>
+        </div>
+        <div class="phone">
+            <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/shoe/w/6/n/6-816625-40-z-aglet-multi-original-imagkfxtmtzfdkfu.jpeg?q=70"/>
+            <p>Z AGLET-Army Protocol Sneakers For Men  (Multicolor , 6)</p>
+            <p class="box" data-value="6999">₹6,999</p>
+        </div>
+        <div class="phone">
+            <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/shoe/o/l/1/8-aj-ogiy-100-8-ajniha-grey-original-imah2twyvhy6gghh.jpeg?q=70"/>
+            <p>AJNIHA- Ogiy Retro Shoes High Premium Quality Attractive Trending Sneakers For Men  (Grey , 6)</p>
+            <p class="box" data-value="629">₹629</p>
+        </div>
+        <div class="phone">
+            <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/shoe/j/o/5/-original-imagg3fbquhstfzg.jpeg?q=70"/>
+            <p>GULASS WICK- Men Derby Casual Shoes Loafers For Men  (Black , 10)</p>
+            <p class="box" data-value="599">₹599</p>
+        </div>
+        <div class="phone">
+            <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/t-shirt/2/3/e/xl-bblwtrnful-z129-blive-original-imagyfh7ev47zy2h.jpeg?q=70"/>
+            <p>BLIVE-Men Printed Round Neck Cotton Blend Black, White T-Shirt</p>
+            <p class="box" data-value="274">₹274</p>
+        </div>
+        <div class="phone">
+            <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/t-shirt/l/p/f/m-mens-lw-lycra-t-shirt-sti-original-imahyyzsjhzefbyh.jpeg?q=70"/>
+            <p>sti-Men Printed Round Neck Polyester Multicolor T-Shirt</p>
+            <p class="box" data-value="191">₹191</p>
+        </div>
+        <div class="phone">
+            <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/t-shirt/d/u/y/l-fst-01-black-sti-original-imah34yzmafvdgvg.jpeg?q=70"/>
+            <p>sti-Men Printed Round Neck Polyester Black T-Shirt</p>
+            <p class="box" data-value="259">₹259</p>
+        </div>
+        <div class="phone">
+            <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/t-shirt/m/b/0/s-cmbhodkormar016014-menkovy-original-imah3ygjmprzhaq8.jpeg?q=70"/>
+            <p>Menkovy-Men Printed Hooded Neck Cotton Blend Black T-Shirt</p>
+            <p class="box" data-value="199">₹199</p>
+        </div>
+        <div class="phone">
+            <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/shirt/k/q/a/s-c301-black-dennis-lingo-original-imagxgkqqahvpjej.jpeg?q=70"/>
+            <p>Dennis Lingo-Men Slim Fit Solid Spread Collar Casual Shirt</p>
+            <p class="box" data-value="462">₹462</p>
+        </div>
+        <div class="phone">
+            <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/shirt/t/h/2/m-shirt-151-foxter-original-imagxvwpabbgyrrv.jpeg?q=70"/>
+            <p>FOXTER- Men Regular Fit Self Design Lapel Collar Casual Shirt</p>
+            <p class="box" data-value="299">₹299</p>
+        </div>
+        <div class="phone">
+            <img src="https://rukminim2.flixcart.com/image/612/612/kcc9q4w0/shirt/w/w/g/xl-hlsh011439-highlander-original-imafthkjk6hhchar.jpeg?q=70"/>
+            <p>HIGHLANDER-Men Slim Fit Checkered Casual Shirt</p>
+            <p class="box" data-value="623">₹623</p>
+        </div>
+        <div class="phone">
+            <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/shirt/a/s/r/-original-imagqfvgpurwsmvq.jpeg?q=70"/>
+            <p>Raymond - Men Slim Fit Checkered Formal Shirt</p>
+            <p class="box" data-value="949">₹949</p>
+        </div>
+        <div class="phone">
+            <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/trouser/n/0/l/34-sv-gr-streetvibes-original-imahfgznhstq9gek.jpeg?q=70"/>
+            <p>STREETVIBES 
+               - Men Regular Fit Dark Green Cotton Blend Trousers</p>
+            <p class="box" data-value="389">₹389</p>
+        </div>
+        <div class="phone">
+            <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/jean/9/e/j/30-united202-blue-straight-united-denim-original-imagzdkfdubbqtcf.jpeg?q=70"/>
+            <p>UNITED DENIM 
+               - Men Relaxed Fit Mid Rise Dark Blue Jeans</p>
+            <p class="box" data-value="479">₹479</p>
+        </div>
+        <div class="phone">
+            <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/cargo/b/c/d/28-b401-walnut-dennis-lingo-original-imagh6db2km7tzgt.jpeg?q=70"/>
+            <p>Dennis Lingo 
+               - Men Cargos</p>
+            <p class="box" data-value="797">₹797</p>
+        </div>
+        <div class="phone">
+            <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/trouser/9/l/w/32-bi-trouser-combraided-original-imagqtjmgrqzuhsz.jpeg?q=70"/>
+            <p>COMBRAIDED 
+               - Men Slim Fit Black Lycra Blend Trousers</p>
+            <p class="box" data-value="289">₹289</p>
+        </div>
+    </div>
+    <script>
+        let MyBtn = document.querySelector("#btn");
+        let dataValue = document.querySelectorAll(".box");
+
+        MyBtn.addEventListener('click', function() {
+            let x = document.getElementById("min").value;
+            let y = document.getElementById("max").value;
+
+            let xMin = parseInt(x);
+            let yMax = parseInt(y);
+
+            dataValue.forEach(function(item) {
+                let DataItems = parseInt(item.getAttribute('data-value'));
+
+                if (DataItems >= xMin && DataItems <= yMax) {
+                    item.parentElement.style.display = "block";
+                } else {
+                    item.parentElement.style.display = "none";
+                }
+            });
+        });
+    </script>
+</body>
+</html>

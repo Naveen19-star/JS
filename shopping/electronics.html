@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon"href="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/flipkart-icon.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <title>Electronics</title>
+    <style>
+        .phone img {
+            height: auto;
+            max-height:200px;
+            width: auto;
+            max-width:250px;
+            padding-left:40px;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1%;
+            justify-content: space-around;
+        }
+        .phone {
+            width: 100%;
+            max-width: 300px;
+            margin: 10px;
+            padding: 10px;
+            box-sizing: border-box;
+            animation-name:nav;
+            animation-iteration-count:1;
+            animation-duration:1s;
+            transition:0.3s;
+        }
+        .phone:hover{
+            transform:scale(110%);
+            box-shadow:8px 5px 10px darkgray;
+        }
+        @keyframes nav{
+          0%{transform:translateX(60px);
+              opacity:0.5;}
+              100%{transform:translate(0);
+              opacity: 1;}
+        }
+        #btn{
+            border-radius:20px;
+            width:100px;
+            background:linear-gradient(to left,#c2c5aa,#656d4a);
+            transition:0.5s;
+        }
+        #btn:hover{
+            transform:scale(110%);
+        }
+        p {
+            text-align: center;
+        }
+        .filter {
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            gap: 1%;
+        }
+
+        @media (min-width: 576px) {
+            .phone {
+                width: 45%;
+            }
+        }
+
+        @media (min-width: 768px) {
+            .phone {
+                width: 30%;
+            }
+        }
+
+        @media (min-width: 992px) {
+            .phone {
+                width: 22%;
+            }
+        }
+        .box{
+            font-size:20px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar bg-dark border-bottom border-body sticky-top" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand"><img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/fkheaderlogo_exploreplus-44005d.svg"/></a>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+      <a href="index.html"><div class="btn m-4 bg-primary">Back</div></a>
+      <div class="filter">
+        <h4>Filter</h4>
+        <input type="number" placeholder="Enter a Min Number" id="min">
+        <input type="number" placeholder="Enter a Max Number" id="max">
+        <input type="submit" value="Submit" id="btn">
+    </div>
+    <div class="container pt-3">
+        <div class="phone">
+            <img src="https://rukminim2.flixcart.com/image/312/312/xif0q/computer/u/1/4/-original-imaguyt4gyzmcm9y.jpeg?q=70"/>
+            <p>Acer Swift Go 14 EVO OLED Intel Core i5 13th Gen 13500H - (16 GB/512 GB SSD/Windows 11 Home) SFG14-71-58UB Thin and Light Laptop  (14 Inch, Pure Silver, 1.25 Kg, With MS Office)</p>
+            <p class="box" data-value="56990">₹56,990</p>
+        </div>
+        <div class="phone">
+            <img src="https://rukminim2.flixcart.com/image/312/312/xif0q/computer/w/h/7/-original-imahfepfndsqhkjr.jpeg?q=70"/>
+            <p>Acer Aspire 3 Backlit Intel Core i5 12th Gen 1235U - (16 GB/512 GB SSD/Windows 11 Home) A324-51 Thin and Light Laptop  (14 Inch, Steel Gray, 1.45 Kg)</p>
+            <p class="box" data-value="39990">₹39,990</p>
+        </div>
+        <div class="phone">
+            <img src="https://rukminim2.flixcart.com/image/312/312/xif0q/computer/q/c/u/a715-76g-gaming-laptop-acer-original-imah3d3htza8t7bz.jpeg?q=70"/>
+            <p>Acer Aspire 7 (2024) Intel Core i5 12th Gen 12450H - (16 GB/512 GB SSD/Windows 11 Home/4 GB Graphics/NVIDIA GeForce RTX 2050) A715-76G-52H4/ A715-76G Gaming Laptop  (15.6 Inch, Charcoal Black, 2.1 Kg)</p>
+            <p class="box" data-value="49990">₹49,990</p>
+        </div>
+        <div class="phone">
+            <img src="https://rukminim2.flixcart.com/image/312/312/xif0q/computer/s/v/s/-original-imagtq43zdsucjk9.jpeg?q=70"/>
+            <p>WINGS Nuvobook V1 Aluminium Alloy Metal Body Intel Intel Core i5 11th Gen 1155G7 - (8 GB/512 GB SSD/Windows 11 Home) WL-Nuvobook V1-RED Thin and Light Laptop  (15.6 Inch, Red, 1.60 Kg)</p>
+            <p class="box" data-value="28990">₹28,990</p>
+        </div>
+        <div class="phone">
+            <img src="https://rukminim2.flixcart.com/image/312/312/xif0q/computer/u/1/q/x1502za-ej993ws-thin-and-light-laptop-asus-original-imah26j6h54zwxx6.jpeg?q=70"/>
+            <p>ASUS Vivobook 15 Intel Core i5 12th Gen 1235U - (16 GB/512 GB SSD/Windows 11 Home) X1502ZA-EJ545WS Thin and Light Laptop  (15.6 Inch, Icelight Silver, 1.70 Kg, With MS Office)</p>
+            <p class="box" data-value="47990">₹47,990</p>
+        </div>
+        <div class="phone">
+            <img src="https://rukminim2.flixcart.com/image/312/312/xif0q/computer/6/e/g/-original-imagxqetsqyqgfah.jpeg?q=70"/>
+            <p>ZEBRONICS Pro Series Z Intel Core i5 12th Gen 1235U - (16 GB/512 GB SSD/Windows 11 Home) ZEB-NBC 4S Thin and Light Laptop  (15.6 inch, Space Grey, 1.76 Kg)</p>
+            <p class="box" data-value="31990">₹31,990</p>
+        </div>
+        <div class="phone">
+            <img src="https://rukminim2.flixcart.com/image/312/312/xif0q/computer/t/m/u/phn16-71-gaming-laptop-acer-original-imah3d3dsyyhqjtg.jpeg?q=70"/>
+            <p>Acer Predator Neo (2024) Intel Core i5 13th Gen 13500HX - (16 GB/512 GB SSD/Windows 11 Home/6 GB Graphics/NVIDIA GeForce RTX 4050) PHN16-71-59XW/ PHN16-71-553K/ PHN 16-71 Gaming Laptop  (16 Inch, Obsidian Black, 2.6 Kg)</p>
+            <p class="box" data-value="89990">₹89,990</p>
+        </div>
+        <div class="phone">
+            <img src="https://rukminim2.flixcart.com/image/312/312/xif0q/computer/r/p/w/slim-5-thin-and-light-laptop-lenovo-original-imah3csewhjxkyzz.jpeg?q=70"/>
+            <p>Lenovo IdeaPad Slim 5 (2024) Intel Core i5 13th Gen 13500H - (16 GB/512 GB SSD/Windows 11 Home) 16IRL8 Thin and Light Laptop  (16 Inch, Cloud Grey, 1.89 kg, With MS Office)</p>
+            <p class="box" data-value="64990">₹64,990</p>
+        </div>
+        <div class="phone">
+            <img src="https://rukminim2.flixcart.com/image/312/312/xif0q/computer/8/o/l/11mk-g9-chromebook-hp-original-imagz7seah6zvmw9.jpeg?q=70"/>
+            <p>HP Chromebook (2024) MediaTek MT8183 - (4 GB/32 GB EMMC Storage/Chrome OS) 11MK G9 EE Chromebook  (11.6 Inch, Black, 1.34 Kg)</p>
+            <p class="box" data-value="10990">₹10,990</p>
+        </div>
+        <div class="phone">
+            <img src="https://rukminim2.flixcart.com/image/312/312/xif0q/computer/l/h/1/inspiron-3520-thin-and-light-laptop-dell-original-imahyggypmfkkpnf.jpeg?q=70"/>
+            <p>DELL Inspiron 3520 Intel Core i3 12th Gen 1215U - (8 GB/512 GB SSD/Windows 11 Home) New Inspiron 15 Laptop Thin and Light Laptop  (15.6 Inch, Platinum Silver, 1.65 Kg, With MS Office)</p>
+            <p class="box" data-value="34970">₹34,970</p>
+        </div>
+        <div class="phone">
+            <img src="https://rukminim2.flixcart.com/image/312/312/xif0q/computer/f/3/h/-original-imagsnzbnbnyuf9b.jpeg?q=70"/>
+            <p>HP OMEN Intel Core i5 13th Gen 13420H - (16 GB/512 GB SSD/Windows 11 Home/6 GB Graphics/NVIDIA GeForce RTX 4050) 16-wd0880TX Gaming Laptop  (16.1 Inch, Shadow Black, 2.32 Kg, With MS Office)</p>
+            <p class="box" data-value="81990">₹81,990</p>
+        </div>
+        <div class="phone">
+            <img src="https://rukminim2.flixcart.com/image/312/312/xif0q/computer/5/y/u/15ihu6-gaming-laptop-lenovo-original-imah3cs4ubqchfhc.jpeg?q=70"/>
+            <p>Lenovo IdeaPad Gaming 3 (2024) Intel Core i5 11th Gen 11300H - (8 GB/512 GB SSD/Windows 11 Home/4 GB Graphics/NVIDIA GeForce RTX 3050) IdeaPad Gaming 3 15IHU6D2 Gaming Laptop  (15.6 inch, Shadow Black, 2.25 kg, With MS Office)</p>
+            <p class="box" data-value="62990">₹62,990</p>
+        </div>
+        <div class="phone">
+            <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/smartwatch/b/o/n/-original-imagqhba9hzmp2zh.jpeg?q=70"/>
+            <p>Fastrack Revoltt FS1+|2.01'' Biggest UltraVU Display|Industry Best 950 Nits|BT Calling Smartwatch  (Black Strap, Free Size)</p>
+            <p class="box" data-value="1399">₹1,399</p>
+        </div>
+        <div class="phone">
+            <img src="https://rukminim2.flixcart.com/image/400/400/xif0q/smartwatch/0/y/z/-original-imah2thzefd9wnfe.jpeg?q=50"/>
+            <p>Noise Icon Buzz 1.69" Display with Bluetooth Calling, Built-In Games, Voice Assistant Smartwatch  (Elite Black Strap, Regular)</p>
+            <p class="box" data-value="1299">₹1,299</p>
+        </div>
+        <div class="phone">
+            <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/smartwatch/f/g/g/-original-imagywnz46fngcks.jpeg?q=70"/>
+            <p>Fastrack Optimus Pro with 1.43" AMOLED Display & AOD(466x466),Functional Crown,BT Calling Smartwatch  (Blue Strap, Free Size)</p>
+            <p class="box" data-value="1799">₹1,799</p>
+        </div>
+        <div class="phone">
+            <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/smartwatch/t/7/o/-original-imagyxxfu5bszaxy.jpeg?q=70"/>
+            <p>boAt Lunar Prime w/ 1.45" AMOLED Display, BT Calling, boAt Coins & Watch Face Studio Smartwatch  (Steel Black Strap, Free Size)</p>
+            <p class="box" data-value="1699">₹1,699</p>
+        </div>
+        <div class="phone">
+            <img src="https://rukminim2.flixcart.com/image/312/312/xif0q/tablet/z/q/r/-original-imagtz9hftnvjpyv.jpeg?q=70"/>
+            <p>Lenovo Tab P12 8 GB RAM 128 GB ROM 12.7 Inch with Wi-Fi Only Tablet (Storm Grey)</p>
+            <p class="box" data-value="26999">₹26,999</p>
+        </div>
+        <div class="phone">
+            <img src="https://rukminim2.flixcart.com/image/312/312/xif0q/tablet/r/4/m/-original-imagj72vqsfqgzpf.jpeg?q=70"/>
+            <p>Apple iPad (10th Gen) 64 GB ROM 10.9 inch with Wi-Fi Only (Blue)</p>
+            <p class="box" data-value="30900">₹30,900</p>
+        </div>
+        <div class="phone">
+            <img src="https://rukminim2.flixcart.com/image/312/312/xif0q/computer/p/h/o/-original-imah32rczr7yfggs.jpeg?q=70"/>
+            <p>HP Intel Core N N305 - (8 GB/256 GB/Chrome Plus) 14b-cd0014TU Chromebook  (14 Inch, Meteor Silver, 1.37 Kg)</p>
+            <p class="box" data-value="50490">₹50,490</p>
+        </div>
+        <div class="phone">
+            <img src="https://rukminim2.flixcart.com/image/312/312/l0jwbrk0/tablet/z/u/w/-original-imagcbjayxa5jjxz.jpeg?q=70"/>
+            <p>Apple iPad Air (5th gen) 256 GB ROM 10.9 Inch with Wi-Fi Only (Pink)</p>
+            <p class="box" data-value="57699">₹57,699</p>
+        </div>
+        <div class="phone">
+            <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/speaker/n/s/f/-original-imaggrf8nvnzhhfs.jpeg?q=70"/>
+            <p>Mivi Fort S16 Soundbar with 2 full range drivers, Made in India 16 W Bluetooth Soundbar  (Black, 2.0 Channel)</p>
+            <p class="box" data-value="1099">₹1,099</p>
+        </div>
+        <div class="phone">
+            <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/speaker/x/n/o/-original-imagzu7myhssag4g.jpeg?q=70"/>
+            <p>boAt Aavante Bar 1550 Pro w/ Exquisite Design, LEDs & Master Remote Control 160 W Bluetooth Soundbar  (Pebble Black, 2.1 Channel)</p>
+            <p class="box" data-value="5499">₹5,499</p>
+        </div>
+        <div class="phone">
+            <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/speaker/h/f/8/-original-imagugv5t7ygfywe.jpeg?q=70"/>
+            <p>boAt Aavante Bar 590 with 25W RMS, Dual Passive Radiatior & 7 Hours Playback 25 W Bluetooth Soundbar  (Pebble Black, 2.0 Channel)</p>
+            <p class="box" data-value="1699">₹1,699</p>
+        </div>
+        <div class="phone">
+            <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/speaker/q/m/b/-original-imahfg2nfzfu6yhn.jpeg?q=70"/>
+            <p>GOVO GOSURROUND 945| 120 W Bluetooth Soundbar  (Platinum Black, 5.1 Channel)</p>
+            <p class="box" data-value="4999">₹4,999</p>
+        </div>
+        <div class="phone">
+            <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/mini-ups/x/k/b/routerups-cru12v2a-12-resonate-original-imahfqzn2duuzksr.jpeg?q=70"/>
+            <p>RESONATE RouterUPS CRU12V2A Power Backup for Router</p>
+            <p class="box" data-value="1899">₹1,899</p>
+        </div>
+        <div class="phone">
+            <img src="https://rukminim2.flixcart.com/image/612/612/kbnz8nk0/router/x/y/k/d-link-dir-650in-original-imafsysqj3f3tec5.jpeg?q=70"/>
+            <p>D-Link DIR-650IN 300 Mbps Wireless Router  (Black, Single Band)</p>
+            <p class="box" data-value="999">₹999</p>
+        </div>
+        <div class="phone">
+            <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/router/a/v/9/-original-imagygz35xycfayb.jpeg?q=70"/>
+            <p>TP-Link RE200 750 Mbps WiFi Range Extender  (White, Dual Band)</p>
+            <p class="box" data-value="1699">₹1,699</p>
+        </div>
+        <div class="phone">
+            <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/lan-adapter/y/c/8/-original-imahfcgzrhrwemw7.jpeg?q=70"/>
+            <p>TP-Link USB Type-C to RJ45 Gigabit Ethernet Network Adapter UE300C  (1000 Mbps)</p>
+            <p class="box" data-value="999">₹999</p>
+        </div>
+    </div>
+    <script>
+        let MyBtn = document.querySelector("#btn");
+        let dataValue = document.querySelectorAll(".box");
+
+        MyBtn.addEventListener('click', function() {
+            let x = document.getElementById("min").value;
+            let y = document.getElementById("max").value;
+
+            let xMin = parseInt(x);
+            let yMax = parseInt(y);
+
+            dataValue.forEach(function(item) {
+                let DataItems = parseInt(item.getAttribute('data-value'));
+
+                if (DataItems >= xMin && DataItems <= yMax) {
+                    item.parentElement.style.display = "block";
+                } else {
+                    item.parentElement.style.display = "none";
+                }
+            });
+        });
+    </script>
+</body>
+</html>

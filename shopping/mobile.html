@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon"href="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/flipkart-icon.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <title>Mobiles</title>
+    <style>
+        .phone img {
+            height: 200px;
+            width: auto;
+            padding-left:50px;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1%;
+            justify-content: space-around;
+        }
+        .phone {
+            width: 100%;
+            max-width: 300px;
+            margin: 10px;
+            padding: 10px;
+            box-sizing: border-box;
+            animation-name:nav;
+            animation-iteration-count:1;
+            animation-duration:1s;
+            transition:0.3s;
+        }
+        .phone:hover{
+            transform:scale(110%);
+            box-shadow:8px 5px 10px darkgray;
+        }
+        @keyframes nav{
+          0%{transform:translateX(60px);
+              opacity:0.5;}
+              100%{transform:translate(0);
+              opacity: 1;}
+        }
+        #btn{
+            border-radius:20px;
+            width:100px;
+            background:linear-gradient(to left,#c2c5aa,#656d4a);
+            transition:0.5s;
+        }
+        #btn:hover{
+            transform:scale(110%);
+        }
+        p {
+            text-align: center;
+        }
+        .filter {
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            gap: 1%;
+        }
+
+        @media (min-width: 576px) {
+            .phone {
+                width: 45%;
+            }
+        }
+
+        @media (min-width: 768px) {
+            .phone {
+                width: 30%;
+            }
+        }
+
+        @media (min-width: 992px) {
+            .phone {
+                width: 22%;
+            }
+        }
+        .box{
+            font-size:20px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar bg-dark border-bottom border-body sticky-top" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand"><img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/fkheaderlogo_exploreplus-44005d.svg"/></a>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+      <a href="index.html"><div class="btn  m-4 bg-primary">Back</div></a>
+      <div class="filter">
+        <h4>Filter</h4>
+        <input type="number" placeholder="Enter a Min Number" id="min">
+        <input type="number" placeholder="Enter a Max Number" id="max">
+        <input type="submit" value="Submit" id="btn">
+    </div>
+    <div class="container pt-3">
+        <div class="phone">
+            <img src="https://m.media-amazon.com/images/I/71v2jVh6nIL._AC_UF1000,1000_QL80_.jpg"/>
+            <p>Apple iPhone 15 (Pink, 256 GB)</p>
+            <p class="box" data-value="81999">₹81,999</p>
+        </div>
+        <div class="phone">
+            <img src="https://rukminim2.flixcart.com/image/850/1000/xif0q/mobile/n/m/f/g34-5g-pb1v0002in-motorola-original-imagwu4rayqhgfjh.jpeg?q=90&crop=false"/>
+            <p>Motorola G34 5G (Charcoal Black, 128 GB)  (8 GB RAM)</p>
+            <p class="box" data-value="11999">₹11,999</p>
+        </div>
+        <div class="phone">
+            <img src="https://i.gadgets360cdn.com/products/large/redmi-13c-590x800-1702621053.jpg"/>
+            <p>REDMI 13C (Stardust Black, 128 GB)  (4 GB RAM)</p>
+            <p class="box" data-value="7699">₹7,699</p>
+        </div>
+        <div class="phone">
+            <img src="https://rukminim2.flixcart.com/image/850/1000/xif0q/mobile/c/4/d/-original-imaghx9qygjjg8hz.jpeg?q=90&crop=false"/>
+            <p>Apple iPhone 14 Plus (Blue, 128 GB)</p>
+            <p class="box" data-value="58999">₹58,999</p>
+        </div>
+        <div class="phone">
+            <img src="https://rukminim2.flixcart.com/image/850/1000/xif0q/mobile/5/t/j/edge-50-fusion-pb300002in-motorola-original-imahywzrfagkuyxx.jpeg?q=90&crop=false"/>
+            <p>Motorola Edge 50 Fusion (Marshmallow Blue, 128 GB)  (8 GB RAM)</p>
+            <p class="box" data-value="22999">₹22,999</p>
+        </div>
+        <div class="phone">
+            <img src="https://m.media-amazon.com/images/I/71TuA6CbN8L.jpg"/>
+            <p>Motorola g04s (Concord Black, 64 GB)  (4 GB RAM)</p>
+            <p class="box" data-value="6999">₹6,999</p>
+        </div>
+        <div class="phone">
+            <img src="https://rukminim2.flixcart.com/image/850/1000/xif0q/mobile/l/x/h/g64-5g-pb2e0001in-motorola-original-imagzzd3ecgm2wp5.jpeg?q=90&crop=false"/>
+            <p>Motorola g64 5G (Mint Green, 128 GB)  (8 GB RAM)</p>
+            <p class="box" data-value="14999">₹14,999</p>
+        </div>
+        <div class="phone">
+            <img src="https://m.media-amazon.com/images/I/717hl0-ljZL._AC_UF1000,1000_QL80_.jpg"/>
+            <p>POCO M6 5G (Galactic Black, 128 GB)  (6 GB RAM)</p>
+            <p class="box" data-value="9999">₹9,999</p>
+        </div>
+        <div class="phone">
+            <img src="https://m.media-amazon.com/images/I/71m+dNHzoGL._AC_UF1000,1000_QL80_.jpg"/>
+            <p>Motorola Edge 50 Fusion (Hot Pink, 256 GB)  (12 GB RAM)</p>
+            <p class="box" data-value="24999">₹24,999</p>
+        </div>
+        <div class="phone">
+            <img src="https://cdn1.smartprix.com/rx-i1S4YHRCX-w420-h420/vivo-t3x-5g.jpg"/>
+            <p>vivo T3x 5G (Crimson Bliss, 128 GB)  (6 GB RAM)</p>
+            <p class="box" data-value="14999">₹14,999</p>
+        </div>
+        <div class="phone">
+            <img src="https://in-exstatic-vivofs.vivo.com/gdHFRinHEMrj3yPG/1719391862819/4cf3ed5ad0443245d55929b7761f82c4.png"/>
+            <p>vivo T3 Lite 5G (Vibrant Green, 128 GB)  (6 GB RAM)</p>
+            <p class="box" data-value="11499">₹11,499</p>
+        </div>
+        <div class="phone">
+            <img src="https://m.media-amazon.com/images/I/71ynZLgkkBL.jpg"/>
+            <p>Motorola g64 5G (Ice Lilac, 256 GB)  (12 GB RAM)</p>
+            <p class="box" data-value="16999">₹16,999</p>
+        </div>
+        <div class="phone">
+            <img src="https://rukminim2.flixcart.com/image/850/1000/xif0q/mobile/n/m/f/g34-5g-pb1v0002in-motorola-original-imagwu4rayqhgfjh.jpeg?q=90&crop=false"/>
+            <p>Motorola G34 5G (Ice Blue, 128 GB)  (4 GB RAM)</p>
+            <p class="box" data-value="10999">₹10,999</p>
+        </div>
+        <div class="phone">
+            <img src="data:image/jpeg;base64,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"/>
+            <p>OnePlus Nord CE 3 Lite 5G (Pastel Lime, 256 GB)  (8 GB RAM)</p>
+            <p class="box" data-value="18999">₹18,999</p>
+        </div>
+        <div class="phone">
+            <img src="https://rukminim2.flixcart.com/image/850/1000/xif0q/mobile/n/m/f/g34-5g-pb1v0002in-motorola-original-imagwu4rayqhgfjh.jpeg?q=90&crop=false"/>
+            <p>Motorola G34 5G (Forest Green, 256 GB)  (12 GB RAM)</p>
+            <p class="box" data-value="18575">₹18,575</p>
+        </div>
+        <div class="phone">
+            <img src="https://rukminim2.flixcart.com/image/850/1000/xif0q/mobile/b/u/8/c65-mzb0g8nin-poco-original-imagw6j2kp5t5jek.jpeg?q=20&crop=false"/>
+            <p>POCO C65 (Pastel Blue, 128 GB)  (4 GB RAM)</p>
+            <p class="box" data-value="6999">₹6,999</p>
+        </div>
+        <div class="phone">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReiZZv350_0zULVgx-QVH6gnny3IENS8lh4w&s"/>
+            <p>Nokia 105 Single SIM, Keypad Mobile Phone with Wireless FM Radio  (Cyan)</p>
+            <p class="box" data-value="1598">₹1,598</p>
+        </div>
+        <div class="phone">
+            <img src="https://m.media-amazon.com/images/I/51GwzNvduUL._AC_SY350_QL15_.jpg"/>
+            <p>SAMSUNG Galaxy F34 5G (Electric Black, 128 GB)  (8 GB RAM)</p>
+            <p class="box" data-value="14999">₹14,999</p>
+        </div>
+        <div class="phone">
+            <img src="https://m.media-amazon.com/images/I/717yx8s4prL._AC_UF1000,1000_QL80_.jpg"/>
+            <p>realme 12x 5G (Woodland Green, 128 GB)  (8 GB RAM)</p>
+            <p class="box" data-value="14999">₹14,999</p>
+        </div>
+        <div class="phone">
+            <img src="https://rukminim2.flixcart.com/image/850/1000/xif0q/mobile/g/r/r/-original-imagtyw9krny3n2f.jpeg?q=90&crop=false"/>
+            <p>SAMSUNG Galaxy F34 5G (Mystic Green, 128 GB)  (6 GB RAM)</p>
+            <p class="box" data-value="12999">₹12,999</p>
+        </div>
+        <div class="phone">
+            <img src="https://m.media-amazon.com/images/I/711kX064JHL._AC_UF1000,1000_QL80_.jpg"/>
+            <p>realme 12x 5G (Twilight Purple, 128 GB)  (6 GB RAM)</p>
+            <p class="box" data-value="13499">₹13,499</p>
+        </div>
+        <div class="phone">
+            <img src="https://rukminim2.flixcart.com/image/850/1000/xif0q/mobile/q/y/o/hot-40i-x6528-infinix-original-imagxquujpnngqgz.jpeg?q=90&crop=false"/>
+            <p>Infinix HOT 40i (Horizon Gold, 256 GB)  (8 GB RAM)#JustHere</p>
+            <p class="box" data-value="8999">₹8,999</p>
+        </div>
+        <div class="phone">
+            <img src="https://rukminim2.flixcart.com/image/850/1000/xif0q/mobile/w/d/o/-original-imagtyxbrxcydmqx.jpeg?q=90&crop=false"/>
+            <p>SAMSUNG Galaxy F14 5G (GOAT Green, 128 GB)  (4 GB RAM)</p>
+            <p class="box" data-value="10990">₹10,990</p>
+        </div>
+        <div class="phone">
+            <img src="https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1708664664/Croma%20Assets/Communication/Mobiles/Images/275652_0_gca8r2.png?tr=w-600"/>
+            <p>REDMI 12 5G (Moonstone Silver, 128 GB)  (6 GB RAM)</p>
+            <p class="box" data-value="12499">₹12,499</p>
+        </div>
+        <div class="phone">
+            <img src="https://m.media-amazon.com/images/I/7194wUwmJtL.jpg"/>
+            <p>realme P1 5G (Peacock Green, 128 GB)  (8 GB RAM)</p>
+            <p class="box" data-value="16999">₹16,999</p>
+        </div>
+        <div class="phone">
+            <img src="https://rukminim2.flixcart.com/image/850/1000/xif0q/mobile/h/i/x/-original-imagyr3vfpqrpkbv.jpeg?q=90&crop=false"/>
+            <p>Nothing Phone (2a) 5G (Black, 256 GB)  (8 GB RAM)</p>
+            <p class="box" data-value="25999">₹25,999</p>
+        </div>
+        <div class="phone">
+            <img src="https://rukminim2.flixcart.com/image/850/1000/xif0q/mobile/s/m/0/-original-imah37gw2wv2ayrf.jpeg?q=90&crop=false"/>
+            <p>OPPO K12x 5G with 45W SUPERVOOC Charger In-The-Box (Midnight Voilet, 256 GB)  (8 GB RAM)</p>
+            <p class="box" data-value="15999">₹15,999</p>
+        </div>
+        <div class="phone">
+            <img src="https://rukminim2.flixcart.com/image/850/1000/xif0q/mobile/9/e/e/-original-imaghx9q5rvcdghy.jpeg?q=20&crop=false"/>
+            <p>Apple iPhone 14 (Midnight, 128 GB)</p>
+            <p class="box" data-value="57999">₹57,999</p>
+        </div>
+    </div>
+    <script>
+        let MyBtn = document.querySelector("#btn");
+        let dataValue = document.querySelectorAll(".box");
+
+        MyBtn.addEventListener('click', function() {
+            let x = document.getElementById("min").value;
+            let y = document.getElementById("max").value;
+
+            let xMin = parseInt(x);
+            let yMax = parseInt(y);
+
+            dataValue.forEach(function(item) {
+                let DataItems = parseInt(item.getAttribute('data-value'));
+
+                if (DataItems >= xMin && DataItems <= yMax) {
+                    item.parentElement.style.display = "block";
+                } else {
+                    item.parentElement.style.display = "none";
+                }
+            });
+        });
+    </script>
+</body>
+</html>
